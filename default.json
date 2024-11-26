@@ -1,0 +1,21 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":disableRateLimiting",
+    ":enablePrecommit",
+    "docker:enableMajor",
+    "github>oncoursesystems/renovate-config:automerge-github-actions",
+    "github>oncoursesystems/renovate-config:commit-message",
+    "github>oncoursesystems/renovate-config:pr-labels",
+    "github>oncoursesystems/renovate-config:semantic-commits",
+    "github>oncoursesystems/renovate-config:custom-managers.json5"
+  ],
+  "timezone": "America/New_York",
+  "dependencyDashbaordTitle": "Renovate Dashboard",
+  "suppressNotifications": ["prIgnoreNotification"],
+  "commitBodyTable": true,
+  "rebaseWhen": "auto",
+  "platformCommit": "enabled"
+}

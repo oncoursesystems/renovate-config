@@ -1,0 +1,26 @@
+{
+  "name": "@oncoursesystems/renovate-config",
+  "version": "0.1.0",
+  "description": "Renovate config for OnCourse Systems' repositories",
+  "homepage": "https://github.com/oncoursesystems/renovate-config",
+  "author": "OnCourse Systems For Education",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oncoursesystems/renovate-config.git"
+  },
+  "keywords": [
+    "renovate",
+    "renovate-config"
+  ],
+  "scripts": {
+    "prepare": "pnpm run test",
+    "release": "bumpp && pnpm publish",
+    "test": "pnpm run validate",
+    "validate": "renovate-config-validator --strict"
+  },
+  "devDependencies": {
+    "bumpp": "^9.8.1",
+    "renovate": "^39.31.3"
+  }
+}
