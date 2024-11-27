@@ -4,7 +4,6 @@
     "config:recommended",
     ":dependencyDashboard",
     ":disableRateLimiting",
-    ":enablePrecommit",
     "docker:enableMajor",
     "github>oncoursesystems/renovate-config:automerge-github-actions",
     "github>oncoursesystems/renovate-config:commit-message",
